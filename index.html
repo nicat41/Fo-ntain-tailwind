@@ -5,13 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Foüntain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF6F28",
+              "primary-light": "#FFE7DB",
+            },
+          },
+          fontFamily: {
+            body: "Poppins",
+            Opensans: "'Open Sans'",
+            SourceSans: "'Source Sans 3'",
+          },
+          container: {
+            center: true,
+            width: "1200px"
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    
+  <body class="font-body">
+    <header class="relative z-50">
+    <div class="container flex items-center justify-between h-[96px]">
+      <div class="flex items-center">
+        <a href="#" class="text-[32px] leading-[40px] font-semibold">
+          <span class="font-SourceSans text-primary"> Foüntain </span>
+        </a>
+        <nav class="font-Opensans pl-[136px] space-x-[25px] flex text-white font-semibold">
+          <a href="#" class="h-[48px] flex items-center px-[15px]">Home</a>
+          <a href="#" class="h-[48px] flex items-center px-[15px]">Courses</a>
+          <a href="#" class="h-[48px] flex items-center px-[15px]">Instuctors</a>
+          <a href="#" class="h-[48px] flex items-center px-[15px]">Schedules</a>
+          <a href="#" class="h-[48px] flex items-center px-[15px]">Contact Us</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-[8px]">
+        <button>
+          <img src="./assets/img/search.svg" alt="" />
+        </button>
+        <button class="h-[44px] px-[24px] text-white font-semibold">Login</button>
+        <button class="h-[44px] px-[24px] text-primary bg-white font-semibold rounded-[5px] font-SourceSans ">Register</button>
+      </div>
+    </div>
+</header>
+  
+<section class="relative -top-[96px] after:content-[''] after:absolute after:inset-0 after:bg-gray-900/60" >
+    <figure>
+        <img src="./assets/img/img-font.jpg" alt="">
+    </figure>
+    <div class="absolute z-10 text-white inset-0 flex items-center justify-center ">
+        <div class="w-[970px] mx-auto text-center">
+            <h1 class="font-bold leading-[90px] text-[60px] mb-12px"> A Classical Education for the Future </h1>
+            <p class="text-[24px] leading-[36px] font-normal mb-[46px]">We prepare you to engage in the world that is and to help bring about a world that ought to be</p>
+            <button class="h-[60px] px-[42px] bg-primary text-white font-semibold rounded-[5px]  font-SourceSans">Get Started</button>
+        </div>
+    </div>
+    <div class="absolute shadow rounded-[10px] -bottom-[38px] left-0 right-0 mx-auto w-[970px] z-10 bg-white ">
+        <div class="grid grid-cols-3 gap-x-[48px] px-[110px] py-[38px]">
+        <div class="flex items-center space-x-[24px]">
+          <figure class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full">
+            <img src="./assets/img/Competition/akar-icons_chat-dots.svg" alt="">
+          </figure>
+          <span class="text-[24px] leading-[36px]">
+            Live chat
+          </span>
+        </div>
+        <div class="flex items-center space-x-[24px]">
+            <figure class=" shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full">
+              <img src="./assets/img/Competition/cib_skillshare.svg" alt="">
+            </figure>
+            <span  class="text-[24px] leading-[36px]">
+                Examination
+            </span>
+          </div>
+          <div class="flex items-center space-x-[24px]">
+            <figure class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full ">
+              <img src="./assets/img/Competition/ci_group.svg" alt="">
+            </figure>
+            <span  class="text-[24px] leading-[36px]">
+                Competition
+            </span>
+          </div>
+    </div>
+</div>
+</section>
+ 
   </body>
 </html>
