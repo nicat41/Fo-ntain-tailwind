@@ -20,8 +20,8 @@
             colors: {
               primary: "#FF6F28",
               "primary-light": "#FFE7DB",
-               "gray-text": '#333333',
-               "primary-line": "#F77E23",
+              "gray-text": "#333333",
+              "primary-line": "#F77E23",
             },
           },
           fontFamily: {
@@ -38,158 +38,603 @@
   </head>
   <body class="font-body">
     <header class="relative z-50">
-    <div class="container w-[1200px] flex items-center justify-between h-[96px]">
-      <div class="flex items-center">
-        <a href="#" class="text-[32px] leading-[40px] font-semibold">
-          <span class="font-SourceSans text-primary"> Foüntain </span>
-        </a>
-        <nav class="font-Opensans pl-[136px] space-x-[25px] flex text-white font-semibold">
-          <a href="#" class="h-[48px] flex items-center px-[15px]">Home</a>
-          <a href="#" class="h-[48px] flex items-center px-[15px]">Courses</a>
-          <a href="#" class="h-[48px] flex items-center px-[15px]">Instuctors</a>
-          <a href="#" class="h-[48px] flex items-center px-[15px]">Schedules</a>
-          <a href="#" class="h-[48px] flex items-center px-[15px]">Contact Us</a>
-        </nav>
+      <div
+        class="container w-[1200px] flex items-center justify-between h-[96px]"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-[32px] leading-[40px] font-semibold">
+            <span class="font-SourceSans text-primary"> Foüntain </span>
+          </a>
+          <nav
+            class="font-Opensans pl-[136px] space-x-[25px] flex text-white font-semibold"
+          >
+            <a href="#" class="h-[48px] flex items-center px-[15px]">Home</a>
+            <a href="#" class="h-[48px] flex items-center px-[15px]">Courses</a>
+            <a href="#" class="h-[48px] flex items-center px-[15px]"
+              >Instuctors</a
+            >
+            <a href="#" class="h-[48px] flex items-center px-[15px]"
+              >Schedules</a
+            >
+            <a href="#" class="h-[48px] flex items-center px-[15px]"
+              >Contact Us</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center space-x-[8px]">
+          <button>
+            <img src="./assets/img/search.svg" alt="" />
+          </button>
+          <button class="h-[44px] px-[24px] text-white font-semibold">
+            Login
+          </button>
+          <button
+            class="h-[44px] px-[24px] text-primary bg-white font-semibold rounded-[5px] font-SourceSans"
+          >
+            Register
+          </button>
+        </div>
       </div>
-      <div class="flex items-center space-x-[8px]">
-        <button>
-          <img src="./assets/img/search.svg" alt="" />
-        </button>
-        <button class="h-[44px] px-[24px] text-white font-semibold">Login</button>
-        <button class="h-[44px] px-[24px] text-primary bg-white font-semibold rounded-[5px] font-SourceSans ">Register</button>
-      </div>
-    </div>
-</header>
-  
-<section class="relative -top-[96px] after:content-[''] after:absolute after:inset-0 after:bg-gray-900/60" >
-    <figure>
-        <img src="./assets/img/img-font.jpg" alt="">
-    </figure>
-    <div class="absolute z-10 text-white inset-0 flex items-center justify-center ">
+    </header>
+
+    <section
+      class="relative -top-[96px] after:content-[''] after:absolute after:inset-0 after:bg-gray-900/60"
+    >
+      <figure>
+        <img src="./assets/img/img-font.jpg" alt="" />
+      </figure>
+      <div
+        class="absolute z-10 text-white inset-0 flex items-center justify-center"
+      >
         <div class="w-[970px] mx-auto text-center">
-            <h1 class="font-bold leading-[90px] text-[60px] mb-12px"> A Classical Education for the Future </h1>
-            <p class="text-[24px] leading-[36px] font-normal mb-[46px]">We prepare you to engage in the world that is and to help bring about a world that ought to be</p>
-            <button class="h-[60px] px-[42px] bg-primary text-white font-semibold rounded-[5px]  font-SourceSans">Get Started</button>
+          <h1 class="font-bold leading-[90px] text-[60px] mb-12px">
+            A Classical Education for the Future
+          </h1>
+          <p class="text-[24px] leading-[36px] font-normal mb-[46px]">
+            We prepare you to engage in the world that is and to help bring
+            about a world that ought to be
+          </p>
+          <button
+            class="h-[60px] px-[42px] bg-primary text-white font-semibold rounded-[5px] font-SourceSans"
+          >
+            Get Started
+          </button>
         </div>
-    </div>
-    <div class="absolute shadow rounded-[10px] -bottom-[38px] left-0 right-0 mx-auto w-[970px] z-10 bg-white ">
+      </div>
+      <div
+        class="absolute shadow rounded-[10px] -bottom-[38px] left-0 right-0 mx-auto w-[970px] z-10 bg-white"
+      >
         <div class="grid grid-cols-3 gap-x-[48px] px-[110px] py-[38px]">
-        <div class="flex items-center space-x-[24px]">
-          <figure class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full">
-            <img src="./assets/img/Competition/akar-icons_chat-dots.svg" alt="">
-          </figure>
-          <span class="text-[24px] leading-[36px]">
-            Live chat
-          </span>
-        </div>
-        <div class="flex items-center space-x-[24px]">
-            <figure class=" shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full">
-              <img src="./assets/img/Competition/cib_skillshare.svg" alt="">
+          <div class="flex items-center space-x-[24px]">
+            <figure
+              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
+            >
+              <img
+                src="./assets/img/Competition/akar-icons_chat-dots.svg"
+                alt=""
+              />
             </figure>
-            <span  class="text-[24px] leading-[36px]">
-                Examination
-            </span>
+            <span class="text-[24px] leading-[36px]"> Live chat </span>
           </div>
           <div class="flex items-center space-x-[24px]">
-            <figure class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full ">
-              <img src="./assets/img/Competition/ci_group.svg" alt="">
+            <figure
+              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
+            >
+              <img src="./assets/img/Competition/cib_skillshare.svg" alt="" />
             </figure>
-            <span  class="text-[24px] leading-[36px]">
-                Competition
-            </span>
+            <span class="text-[24px] leading-[36px]"> Examination </span>
           </div>
-    </div>
-</div>
-</section>
- 
-
-<section class="py-[100px] ">
-  <div class="container w-[1200px]">
-  <div>
- <h2 class="text-center text-[48px] leading-[72px] font-semibold mb-[48px]">Top cartegories</h2>
-  </div>
- <div class="flex justify-end">
-<a href="#" class="text-primary text-[24px] mb-[24px]">See all</a>
- </div>
- <div class="grid grid-cols-4 gap-x-[32px]">
-     <article class="relative">
-      <figure class="aspect-[3/4]">
-        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
-      </figure>
-      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
-         <h4 class="leading-[48px] text-[32px] font-semibold">Marketing</h4>
-      </div>
-     </article>
-
-     <article class="relative">
-      <figure class="aspect-[3/4]">
-        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
-      </figure>
-      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
-         <h4 class="leading-[48px] text-[32px] font-semibold">Design</h4>
-      </div>
-     </article>
-
-     <article class="relative">
-      <figure class="aspect-[3/4]">
-        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
-      </figure>
-      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
-         <h4 class="leading-[48px] text-[32px] font-semibold">Programming</h4>
-      </div>
-     </article>
-
-     <article class="relative">
-      <figure class="aspect-[3/4]">
-        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
-      </figure>
-      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
-         <h4 class="leading-[48px] text-[32px] font-semibold">Technology</h4>
-      </div>
-     </article>
- </div>
-</div>
-
-</section>
-
-<section class="py-[100px] bg-primary-light">
-   <div class="container w-[1200px]">
-    <div class="grid grid-cols-2 gap-x-[60px]">
-      <div class="relative">
-        <figure>
-          <img src="./assets/img/Experts/Experts-img.svg" alt="">
-        </figure>
-        <div class="bg-white shadow-2xl rounded-[10px] absolute w-[170px]  right-[40px] bottom-[82px] p-[16px] text-center ">
-          <figure class="inline-flex size-[50px] bg-primary-light rounded-full items-center justify-center mb-[12px]">
-          <img src="./assets/img/Competition/ci_group.svg" alt="">
-          </figure>
-          <div class="text-[20px] leading-[30px] font-normal mb-[16px]">
-           <span class="text-primary-line font-semibold">Outstanding</span>
-           <img class="ml-[12px]" src="./assets/img/Outstanding.svg" alt="">
-           Instructors
-          </div>
-          <div class="flex -space-x-[19px] justify-center">
-            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
-              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
+          <div class="flex items-center space-x-[24px]">
+            <figure
+              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
+            >
+              <img src="./assets/img/Competition/ci_group.svg" alt="" />
             </figure>
-            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
-              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
-            </figure>
-            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
-              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
-            </figure>
-          
+            <span class="text-[24px] leading-[36px]"> Competition </span>
           </div>
         </div>
       </div>
-      <div class="py-[60px]">
-        <h3 class=" mb-[24px] text-[52px] font-bold leading-[78px] text-gray-text">We are <span class="text-primary-line">Experts</span> Learning Institution</h3>
-        <img class="relative  bottom-[110px] left-[200px]" src="./assets/img/Experts_vector.svg" alt="">
-        <p class=" pb-[64px] text-gray-text text-[24px] leading-[36px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </p>
-      <button class="h-[60px]  rounded-[10px] bg-primary px-[42px] text-white font-semibold font-SourceSans" >Enroll now</button>
+    </section>
+
+    <section class="py-[100px]">
+      <div class="container w-[1200px]">
+        <div>
+          <h2
+            class="text-center text-[48px] leading-[72px] font-semibold mb-[48px]"
+          >
+            Top cartegories
+          </h2>
+        </div>
+        <div class="flex justify-end">
+          <a href="#" class="text-primary text-[24px] mb-[24px]">See all</a>
+        </div>
+        <div class="grid grid-cols-4 gap-x-[32px]">
+          <article class="relative">
+            <figure class="aspect-[3/4]">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/info.jpg"
+                alt=""
+              />
+            </figure>
+            <div
+              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+            >
+              <h4 class="leading-[48px] text-[32px] font-semibold">
+                Marketing
+              </h4>
+            </div>
+          </article>
+
+          <article class="relative">
+            <figure class="aspect-[3/4]">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/info.jpg"
+                alt=""
+              />
+            </figure>
+            <div
+              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+            >
+              <h4 class="leading-[48px] text-[32px] font-semibold">Design</h4>
+            </div>
+          </article>
+
+          <article class="relative">
+            <figure class="aspect-[3/4]">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/info.jpg"
+                alt=""
+              />
+            </figure>
+            <div
+              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+            >
+              <h4 class="leading-[48px] text-[32px] font-semibold">
+                Programming
+              </h4>
+            </div>
+          </article>
+
+          <article class="relative">
+            <figure class="aspect-[3/4]">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/img/info.jpg"
+                alt=""
+              />
+            </figure>
+            <div
+              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+            >
+              <h4 class="leading-[48px] text-[32px] font-semibold">
+                Technology
+              </h4>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-   </div>
-</section>
+    </section>
+
+    <section class="py-[100px] bg-primary-light">
+      <div class="container w-[1200px]">
+        <div class="grid grid-cols-2 gap-x-[60px]">
+          <div class="relative">
+            <figure>
+              <img src="./assets/img/Experts/Experts-img.svg" alt="" />
+            </figure>
+            <div
+              class="bg-white shadow-2xl rounded-[10px] absolute w-[170px] right-[40px] bottom-[82px] p-[16px] text-center"
+            >
+              <figure
+                class="inline-flex size-[50px] bg-primary-light rounded-full items-center justify-center mb-[12px]"
+              >
+                <img src="./assets/img/Competition/ci_group.svg" alt="" />
+              </figure>
+              <div class="text-[20px] leading-[30px] font-normal mb-[16px]">
+                <span class="text-primary-line font-semibold">Outstanding</span>
+                <img
+                  class="ml-[12px]"
+                  src="./assets/img/Outstanding.svg"
+                  alt=""
+                />
+                Instructors
+              </div>
+              <div class="flex -space-x-[19px] justify-center">
+                <figure
+                  class="size-[40px] rounded-full overflow-hidden border-2 border-wihte"
+                >
+                  <img
+                    class="size-full object-cover"
+                    src="./assets/img/profile.jpg"
+                    alt=""
+                  />
+                </figure>
+                <figure
+                  class="size-[40px] rounded-full overflow-hidden border-2 border-wihte"
+                >
+                  <img
+                    class="size-full object-cover"
+                    src="./assets/img/profile.jpg"
+                    alt=""
+                  />
+                </figure>
+                <figure
+                  class="size-[40px] rounded-full overflow-hidden border-2 border-wihte"
+                >
+                  <img
+                    class="size-full object-cover"
+                    src="./assets/img/profile.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="py-[60px]">
+            <h3
+              class="mb-[24px] text-[52px] font-bold leading-[78px] text-gray-text"
+            >
+              We are <span class="text-primary-line">Experts</span> Learning
+              Institution
+            </h3>
+            <img
+              class="relative bottom-[110px] left-[200px]"
+              src="./assets/img/Experts_vector.svg"
+              alt=""
+            />
+            <p
+              class="pb-[64px] text-gray-text text-[24px] leading-[36px] font-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit,
+              bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut
+              urna venenatis velit et tincidunt. Id vitae velit
+            </p>
+            <button
+              class="h-[60px] rounded-[10px] bg-primary px-[42px] text-white font-semibold font-SourceSans"
+            >
+              Enroll now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[100px]">
+      <div class="container w-[1200px]">
+        <div>
+          <h2
+            class="text-center text-[48px] leading-[72px] font-semibold mb-[48px]"
+          >
+            Explore our popular course
+          </h2>
+        </div>
+        <div class="flex justify-end mb-[65px]">
+          <div
+            class="w-[130px] h-[46px] bg-primary flex rounded-full items-center justify-center py-[8px] px-[16px] gap-x-[2px]"
+          >
+            <img
+              class="w-[30px] h-[30px] mt-[2px]"
+              src="./assets/img/vector.png"
+              alt=""
+            />
+            <a href="#" class="text-white leading-[27px] text-[18px]"
+              >Sort by</a
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-x-[32px] gap-y-[43px]">
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="shadow bg-white rounded-[10px] overflow-hidden text-gray-text"
+          >
+            <figure>
+              <img src="./assets/img/info.jpg" alt="" />
+            </figure>
+            <div class="p-[24px]">
+              <div class="flex items-start pb-[42px]">
+                <h5 class="leading-[36px] text-[24px] font-medium">
+                  Learn Marketing from Top Instructors.
+                </h5>
+                <div class="shrink-0 pl-[14px] flex gap-x-[7px] mt-[5px]">
+                  <img
+                    width="w-[18px] h-[18px]"
+                    src="./assets/img/star.svg"
+                    alt=""
+                  />
+                  <span class="font-normal leading-[24px]">4.5</span>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-x-[16px]">
+                  <div class="font-medium leading-[36px]">6 weeks</div>
+                  <div class="flex items-center gap-x-[6px]">
+                    <img
+                      class="w-[16px] h-[16px]"
+                      src="./assets/img/user.svg"
+                      alt=""
+                    />
+                    <span class="font-medium leading-[36px]"
+                      >1.5k Students</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="text-[24px] font-semibold leading-[36px] text-primary-line"
+                >
+                  30.5$
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[100px] bg-primary-light">
+      <div class="container w-[1200px]">
+        <div class="grid grid-cols-2 gap-x-[60px]">
+          <div class="py-[76px]">
+            <h3
+              class="mb-[24px] text-[52px] font-bold leading-[78px] text-gray-text"
+            >
+              Our online <span class="text-primary-line">examination</span> is
+              <br />
+              top-notch
+            </h3>
+            <p
+              class="pb-[64px] text-gray-text text-[24px] leading-[36px] font-normal"
+            >
+              Prepare your self for greater challenges with our online
+              examination.
+            </p>
+            <button
+              class="h-[60px] rounded-[10px] bg-primary px-[42px] text-white font-semibold font-SourceSans"
+            >
+              Take a test
+            </button>
+          </div>
+          <div class="relative">
+            <figure class="flex justify-end">
+              <img src="./assets/img/Experts/increase.png" alt="" />
+            </figure>
+            <div
+              class="bg-white shadow-2xl rounded-[10px] absolute w-[170px] left-[30px] right-[0px] bottom-[160px] px-[12px]  py-[16px] text-center"
+            >
+              <figure
+                class="inline-flex size-[50px] bg-primary-light rounded-full items-center justify-center mb-[12px]"
+              >
+                <img src="./assets/img/bag.svg" alt="" />
+              </figure>
+              <div class="text-[18px] leading-[24px] font-normal ">
+                <span class="text-primary-line font-semibold">increase</span>
+                <img
+                  class="ml-[32px] mb-[5px] w-[80px]"
+                  src="./assets/img/Outstanding.svg"
+                  alt=""
+                />
+                Your <br> Job opportunity
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
