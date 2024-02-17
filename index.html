@@ -20,6 +20,8 @@
             colors: {
               primary: "#FF6F28",
               "primary-light": "#FFE7DB",
+               "gray-text": '#333333',
+               "primary-line": "#F77E23",
             },
           },
           fontFamily: {
@@ -29,7 +31,6 @@
           },
           container: {
             center: true,
-            width: "1200px"
           },
         },
       };
@@ -37,7 +38,7 @@
   </head>
   <body class="font-body">
     <header class="relative z-50">
-    <div class="container flex items-center justify-between h-[96px]">
+    <div class="container w-[1200px] flex items-center justify-between h-[96px]">
       <div class="flex items-center">
         <a href="#" class="text-[32px] leading-[40px] font-semibold">
           <span class="font-SourceSans text-primary"> Foüntain </span>
@@ -101,5 +102,94 @@
 </div>
 </section>
  
+
+<section class="py-[100px] ">
+  <div class="container w-[1200px]">
+  <div>
+ <h2 class="text-center text-[48px] leading-[72px] font-semibold mb-[48px]">Top cartegories</h2>
+  </div>
+ <div class="flex justify-end">
+<a href="#" class="text-primary text-[24px] mb-[24px]">See all</a>
+ </div>
+ <div class="grid grid-cols-4 gap-x-[32px]">
+     <article class="relative">
+      <figure class="aspect-[3/4]">
+        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
+      </figure>
+      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
+         <h4 class="leading-[48px] text-[32px] font-semibold">Marketing</h4>
+      </div>
+     </article>
+
+     <article class="relative">
+      <figure class="aspect-[3/4]">
+        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
+      </figure>
+      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
+         <h4 class="leading-[48px] text-[32px] font-semibold">Design</h4>
+      </div>
+     </article>
+
+     <article class="relative">
+      <figure class="aspect-[3/4]">
+        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
+      </figure>
+      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
+         <h4 class="leading-[48px] text-[32px] font-semibold">Programming</h4>
+      </div>
+     </article>
+
+     <article class="relative">
+      <figure class="aspect-[3/4]">
+        <img class="w-full h-full object-cover" src="./assets/img/info.jpg" alt="">
+      </figure>
+      <div class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white">
+         <h4 class="leading-[48px] text-[32px] font-semibold">Technology</h4>
+      </div>
+     </article>
+ </div>
+</div>
+
+</section>
+
+<section class="py-[100px] bg-primary-light">
+   <div class="container w-[1200px]">
+    <div class="grid grid-cols-2 gap-x-[60px]">
+      <div class="relative">
+        <figure>
+          <img src="./assets/img/Experts/Experts-img.svg" alt="">
+        </figure>
+        <div class="bg-white shadow-2xl rounded-[10px] absolute w-[170px]  right-[40px] bottom-[82px] p-[16px] text-center ">
+          <figure class="inline-flex size-[50px] bg-primary-light rounded-full items-center justify-center mb-[12px]">
+          <img src="./assets/img/Competition/ci_group.svg" alt="">
+          </figure>
+          <div class="text-[20px] leading-[30px] font-normal mb-[16px]">
+           <span class="text-primary-line font-semibold">Outstanding</span>
+           <img class="ml-[12px]" src="./assets/img/Outstanding.svg" alt="">
+           Instructors
+          </div>
+          <div class="flex -space-x-[19px] justify-center">
+            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
+              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
+            </figure>
+            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
+              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
+            </figure>
+            <figure class="size-[40px] rounded-full overflow-hidden border-2 border-wihte">
+              <img class="size-full object-cover" src="./assets/img/profile.jpg" alt="">
+            </figure>
+          
+          </div>
+        </div>
+      </div>
+      <div class="py-[60px]">
+        <h3 class=" mb-[24px] text-[52px] font-bold leading-[78px] text-gray-text">We are <span class="text-primary-line">Experts</span> Learning Institution</h3>
+        <img class="relative  bottom-[110px] left-[200px]" src="./assets/img/Experts_vector.svg" alt="">
+        <p class=" pb-[64px] text-gray-text text-[24px] leading-[36px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </p>
+      <button class="h-[60px]  rounded-[10px] bg-primary px-[42px] text-white font-semibold font-SourceSans" >Enroll now</button>
+      </div>
+    </div>
+   </div>
+</section>
   </body>
 </html>
