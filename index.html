@@ -17,6 +17,22 @@
       tailwind.config = {
         theme: {
           extend: {
+            screens: {
+      'sm': '600px', 
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1200px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
             colors: {
               primary: "#FF6F28",
               "primary-light": "#FFE7DB",
@@ -39,20 +55,23 @@
             center: true,
           },
         },
+
       };
+
     </script>
   </head>
   <body class="font-body">
     <header class="relative z-50">
       <div
-        class="container w-[1200px] flex items-center justify-between h-[96px]"
+        class="container flex items-center justify-between h-[96px] pl-[24px] pr-[24px] "
       >
-        <div class="flex items-center">
-          <a href="#" class="text-[32px] leading-[40px] font-semibold">
-            <span class="font-SourceSans text-primary"> Foüntain </span>
+        <div class="flex items-center sm:space-x-[12px]">
+          <img class="lg:hidden sm:block w-[32px] h-[32px]" src="./assets/img/charm_menu-hamburger.svg" alt="">
+          <a href="#" class="lg:text-[32px] lg:leading-[40px] text-[23px] leading-[30px] font-semibold">
+            <span class="font-SourceSans text-primary">Foüntain</span>
           </a>
           <nav
-            class="font-Opensans pl-[136px] space-x-[25px] flex text-white font-semibold"
+            class="font-Opensans pl-[136px] space-x-[25px]  text-white font-semibold hidden lg:flex"
           >
             <a href="#" class="h-[48px] flex items-center px-[15px]">Home</a>
             <a href="#" class="h-[48px] flex items-center px-[15px]">Courses</a>
@@ -67,82 +86,73 @@
             >
           </nav>
         </div>
-        <div class="flex items-center space-x-[8px]">
-          <button>
-            <img src="./assets/img/search.svg" alt="" />
-          </button>
-          <button class="h-[44px] px-[24px] text-white font-semibold">
+        <div class="flex items-center space-x-[8px] ">
+          <a href="">
+            <img class="sm:hidden lg:block" src="./assets/img/search.svg" alt="" />
+          </a>
+          <button class="h-[44px] px-[24px] text-white font-semibold sm:hidden lg:block">
             Login
           </button>
           <button
-            class="h-[44px] px-[24px] text-primary bg-white font-semibold rounded-[5px] font-SourceSans"
+            class="h-[44px] px-[24px] text-primary bg-white font-semibold rounded-[5px] font-SourceSans sm:hidden lg:block"
           >
             Register
           </button>
+          <img class="sm:block lg:hidden" src="./assets/img/carbon_user-avatar.png" alt="">
         </div>
       </div>
     </header>
 
-    <section
-      class="relative -top-[96px] after:content-[''] after:absolute after:inset-0 after:bg-gray-900/60"
-    >
-      <figure>
-        <img src="./assets/img/img-font.jpg" alt="" />
+    <section class="relative lg:-top-[96px] -top-[0px] after:content-[''] after:absolute after:inset-0 after:bg-gray-900/60  ">
+      <figure class="h-[510px] lg:h-[662px] ">
+        <img class="w-full h-full object-cover" src="./assets/img/img-font.jpg" alt="" />
       </figure>
       <div
-        class="absolute z-10 text-white inset-0 flex items-center justify-center"
-      >
-        <div class="w-[970px] mx-auto text-center">
-          <h1 class="font-bold leading-[90px] text-[60px] mb-12px">
+        class="absolute z-10 text-white inset-0 flex items-center justify-center lg:px-[0px] px-[100px]">
+        <div class="lg:w-[970px] mx-auto text-center ">
+          <h1 class="font-bold lg:leading-[90px] lg:text-[60px]  text-[32px] leading-[48px]  lg:mb-[12px] mb-[24px] lg:mt-[67px] lg:px-[110px] mt-[62px]  ">
             A Classical Education for the Future
           </h1>
-          <p class="text-[24px] leading-[36px] font-normal mb-[46px]">
+          <p class="lg:text-[24px] text-[18px] lg:leading-[36px] leading-[25px] font-normal mb-[46px] font-SourceSans lg:px-[170px] px-[50px]">
             We prepare you to engage in the world that is and to help bring
             about a world that ought to be
           </p>
-          <button
-            class="h-[60px] px-[42px] bg-primary text-white font-semibold rounded-[5px] font-SourceSans"
-          >
+          <button class="h-[60px] px-[42px] bg-primary text-white font-semibold rounded-[5px] font-SourceSans mb-[126px]">
             Get Started
           </button>
         </div>
       </div>
-      <div
-        class="absolute shadow rounded-[10px] -bottom-[38px] left-0 right-0 mx-auto w-[970px] z-10 bg-white"
-      >
-        <div class="grid grid-cols-3 gap-x-[48px] px-[110px] py-[38px]">
-          <div class="flex items-center space-x-[24px]">
+    </section>
+
+    <section>
+      <div class="relative lg:shadow-2xl rounded-[10px] lg:-top-[160px]  left-0 right-0 mx-auto lg:w-[970px] z-10 bg-white">
+        <div class="lg:grid lg:grid-cols-3  lg:gap-[48px] gap-[32px] lg:px-[110px] px-[32px] lg:py-[38px] py-[48px] flex flex-wrap justify-center">
+          <div class="flex items-center lg:space-x-[24px] space-x-[16px]">
             <figure
-              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
-            >
-              <img
-                src="./assets/img/Competition/akar-icons_chat-dots.svg"
-                alt=""
-              />
+              class="shrink-0 bg-primary-light inline-flex lg:size-[60px] size-[50px] justify-center items-center rounded-full">
+              <img  src="./assets/img/Competition/akar-icons_chat-dots.svg"  alt=""/>
             </figure>
-            <span class="text-[24px] leading-[36px]"> Live chat </span>
+            <span class="lg:text-[24px] text-[18px] lg:leading-[36px] leading-[27px]"> Live chat </span>
           </div>
-          <div class="flex items-center space-x-[24px]">
+          <div class="flex items-center lg:space-x-[24px] space-x-[16px]">
             <figure
-              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
-            >
+              class="shrink-0 bg-primary-light inline-flex lg:size-[60px] size-[50px] justify-center items-center rounded-full" >
               <img src="./assets/img/Competition/cib_skillshare.svg" alt="" />
             </figure>
-            <span class="text-[24px] leading-[36px]"> Examination </span>
+            <span class="lg:text-[24px] text-[18px] lg:leading-[36px] leading-[27px]"> Examination </span>
           </div>
-          <div class="flex items-center space-x-[24px]">
+          <div class="flex items-center lg:space-x-[24px] space-x-[16px]">
             <figure
-              class="shrink-0 bg-primary-light inline-flex size-[60px] justify-center items-center rounded-full"
-            >
+              class="shrink-0 bg-primary-light inline-flex lg:size-[60px] size-[50px] justify-center items-center rounded-full">
               <img src="./assets/img/Competition/ci_group.svg" alt="" />
             </figure>
-            <span class="text-[24px] leading-[36px]"> Competition </span>
+            <span class="lg:text-[24px] text-[18px] lg:leading-[36px] leading-[27px]"> Competition </span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class=" py-[100px]">
       <div class="container w-[1200px]">
         <div>
           <h2
@@ -224,7 +234,7 @@
       </div>
     </section>
 
-    <section class="py-[60px] bg-primary-light">
+    <section class=" hidden py-[60px] bg-primary-light">
       <div class="container w-[1200px]">
         <div class="grid grid-cols-2 gap-x-[60px]">
           <div class="relative">
@@ -308,7 +318,7 @@
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="hidden py-[100px]">
       <div class="container w-[1200px]">
         <div>
           <h2
@@ -593,7 +603,7 @@
       </div>
     </section>
 
-    <section class="py-[60px] bg-primary-light">
+    <section class="hidden py-[60px] bg-primary-light">
       <div class="container w-[1200px]">
         <div class="grid grid-cols-2 gap-x-[60px]">
           <div class="py-[76px]">
@@ -644,7 +654,7 @@
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="hidden py-[100px]">
       <div class="container w-[1200px]">
         <div>
           <h2
@@ -732,7 +742,7 @@
       </div>
     </section>
 
-    <section class="py-[100px] bg-primary-light">
+    <section class="hidden py-[100px] bg-primary-light">
       <div class="container w-[1200px]">
         <div class="grid grid-cols-2 gap-x-[60px]">
           <div class="relative">
@@ -800,7 +810,7 @@
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="hidden py-[100px]">
       <div class="container w-[1200px]">
         <div>
           <h2
@@ -884,7 +894,7 @@
     </section>
 
 
-    <section class="py-[60px] bg-primary-light">
+    <section class="hidden py-[60px] bg-primary-light">
       <div class="container w-[1200px]">
         <div class="grid grid-cols-2 gap-x-[57px]">
           <div class="py-[76px]">
@@ -926,7 +936,7 @@
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="hidden py-[100px]">
       <div class="container w-[1200px]">
         <div>
           <h2
@@ -1014,7 +1024,7 @@
       </div>
     </section>
 
-    <section class="py-[100px]">
+    <section class="hidden py-[100px]">
       <div class="container w-[1200px]">
 
       <h2 class="text-center mb-[54px] text-[32px] font-semibold text-title">Reviews</h2>
@@ -1072,7 +1082,7 @@
   </div>
     </section>
 
-    <footer class="bg-black pt-[75px]"> 
+    <footer class="hidden bg-black pt-[75px]"> 
       <div class="container w-[1200px] text-white">
         <div class="flex justify-between pb-[64px]">
           <div>
