@@ -61,9 +61,9 @@
     </script>
   </head>
   <body class="font-body">
-    <header class="relative z-50">
+    <header class="relative container z-50 w-[1200px]">
       <div
-        class="container flex items-center justify-between h-[96px] pl-[24px] pr-[24px] "
+        class=" flex items-center justify-between h-[96px] pl-[24px] pr-[24px] "
       >
         <div class="flex items-center sm:space-x-[12px]">
           <img class="lg:hidden sm:block w-[32px] h-[32px]" src="./assets/img/charm_menu-hamburger.svg" alt="">
@@ -71,7 +71,7 @@
             <span class="font-SourceSans text-primary">Foüntain</span>
           </a>
           <nav
-            class="font-Opensans pl-[136px] space-x-[25px]  text-white font-semibold hidden lg:flex"
+            class="font-Opensans pl-[80px] space-x-[15px]  text-white font-semibold hidden lg:flex"
           >
             <a href="#" class="h-[48px] flex items-center px-[15px]">Home</a>
             <a href="#" class="h-[48px] flex items-center px-[15px]">Courses</a>
@@ -124,7 +124,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="pb-[80px]">
       <div class="relative lg:shadow-2xl rounded-[10px] lg:-top-[160px]  left-0 right-0 mx-auto lg:w-[970px] z-10 bg-white">
         <div class="lg:grid lg:grid-cols-3  lg:gap-[48px] gap-[32px] lg:px-[110px] px-[32px] lg:py-[38px] py-[48px] flex flex-wrap justify-center">
           <div class="flex items-center lg:space-x-[24px] space-x-[16px]">
@@ -152,38 +152,34 @@
       </div>
     </section>
 
-    <section class=" py-[100px]">
-      <div class="container w-[1200px]">
+    <section class="pb-[100px]">
+      <div class="container w-[1200px] overflow-x-auto">
         <div>
-          <h2
-            class="text-center text-[48px] leading-[72px] font-semibold mb-[48px]"
-          >
+          <h2 class="text-center lg:text-[48px] text-[24px] lg:leading-[72px] leading-[36px] text-gray-text font-semibold lg:mb-[48px] mb-[24px]">
             Top cartegories
           </h2>
         </div>
         <div class="flex justify-end">
-          <a href="#" class="text-primary text-[24px] mb-[24px]">See all</a>
+          <a href="#" class="text-primary lg:text-[24px] text-[14px]  lg:leading-[36px] leading-[21px] lg:mb-[24px] mb-[16px]">See all</a>
         </div>
-        <div class="grid grid-cols-4 gap-x-[32px]">
+        <div class="grid grid-cols-4 lg:gap-x-[32px] gap-x-[16px] pl-[24px] ">
           <article class="relative">
-            <figure class="aspect-[3/4]">
+            <figure class="lg:aspect-[3/4] aspect-[2/3]">
               <img
                 class="w-full h-full object-cover"
                 src="./assets/img/info.jpg"
                 alt=""
               />
             </figure>
-            <div
-              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
-            >
-              <h4 class="leading-[48px] text-[32px] font-semibold">
+            <div class="absolute inset-0 bg-gray-900/60 flex justify-center lg:items-end items-center  lg:p-[24px] p-[7px]  text-white" >
+              <h4 class=" lg:text-[32px] text-[16px] lg:leading-[48px] leading-[24px] font-semibold text-center">
                 Marketing
               </h4>
             </div>
           </article>
 
           <article class="relative">
-            <figure class="aspect-[3/4]">
+            <figure class="lg:aspect-[3/4] aspect-[2/3]">
               <img
                 class="w-full h-full object-cover"
                 src="./assets/img/info.jpg"
@@ -191,14 +187,14 @@
               />
             </figure>
             <div
-              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+              class="absolute inset-0 bg-gray-900/60 flex  justify-center lg:items-end items-center  lg:p-[24px] p-[7px]  text-white"
             >
-              <h4 class="leading-[48px] text-[32px] font-semibold">Design</h4>
+              <h4 class=" lg:text-[32px] text-[16px] lg:leading-[48px] leading-[24px] font-semibold">Design</h4>
             </div>
           </article>
 
           <article class="relative">
-            <figure class="aspect-[3/4]">
+            <figure class="lg:aspect-[3/4] aspect-[2/3]">
               <img
                 class="w-full h-full object-cover"
                 src="./assets/img/info.jpg"
@@ -206,16 +202,16 @@
               />
             </figure>
             <div
-              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+              class="absolute inset-0 bg-gray-900/60 flex  justify-center lg:items-end items-center  lg:p-[24px] p-[7px]  text-white"
             >
-              <h4 class="leading-[48px] text-[32px] font-semibold">
+              <h4 class=" lg:text-[32px] text-[16px] lg:leading-[48px] leading-[24px] font-semibold">
                 Programming
               </h4>
             </div>
           </article>
 
           <article class="relative">
-            <figure class="aspect-[3/4]">
+            <figure class="lg:aspect-[3/4] aspect-[2/3]">
               <img
                 class="w-full h-full object-cover"
                 src="./assets/img/info.jpg"
@@ -223,9 +219,9 @@
               />
             </figure>
             <div
-              class="absolute inset-0 bg-gray-900/60 flex items-end p-[24px] text-white"
+              class="absolute inset-0 bg-gray-900/60 flex  justify-center lg:items-end items-center  lg:p-[24px] p-[7px]  text-white"
             >
-              <h4 class="leading-[48px] text-[32px] font-semibold">
+              <h4 class=" lg:text-[32px] text-[16px] lg:leading-[48px] leading-[24px] font-semibold">
                 Technology
               </h4>
             </div>
